@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  tomcat:
+    accesslog:
+      directory: /Users/chaizi/work/server/basePro/tomcat-logs
+      enabled: true
+  servlet:
+    context-path: /basepro
+  compression:
+    enabled: true
+    min-response-size: 1024
+    mime-types:
+    - application/json
+###swagger
+swagger:
+  enable: true
+logging:
+  config: classpath:logback-dev.xml
